@@ -1,0 +1,53 @@
+{
+	"header": {
+		"displayName": "MJML Render",
+		"description": "MJML über usemjml.com in responsives E-Mail-HTML umwandeln"
+	},
+	"nodeView": {
+		"mjml": {
+			"displayName": "MJML",
+			"description": "Das MJML-Template (max. 2 MiB). mj-include wird nicht unterstützt."
+		},
+		"options": {
+			"displayName": "Optionen",
+			"placeholder": "Option hinzufügen",
+			"options": {
+				"beautify": {
+					"displayName": "Formatieren",
+					"description": "Ob das erzeugte HTML lesbar formatiert werden soll"
+				},
+				"fonts": {
+					"displayName": "Schriften",
+					"description": "Webfonts, die das Template verwenden darf. Ersetzt die MJML-Standardschriften.",
+					"placeholder": "Schrift hinzufügen"
+				},
+				"keepComments": {
+					"displayName": "Kommentare behalten",
+					"description": "Ob HTML-Kommentare in der Ausgabe erhalten bleiben"
+				},
+				"minify": {
+					"displayName": "Minifizieren",
+					"description": "Ob das erzeugte HTML minifiziert werden soll"
+				},
+				"validationLevel": {
+					"displayName": "Validierungsstufe",
+					"description": "Wie streng MJML das Template prüft. \"Strict\" lässt den Knoten bei einem ungültigen Template fehlschlagen.",
+					"options": {
+						"skip": {
+							"displayName": "Überspringen",
+							"description": "Nur abfangen, was sich gar nicht parsen lässt"
+						},
+						"soft": {
+							"displayName": "Weich",
+							"description": "Trotzdem rendern und Validierungsfehler melden"
+						},
+						"strict": {
+							"displayName": "Streng",
+							"description": "Ein ungültiges Template nicht rendern"
+						}
+					}
+				}
+			}
+		}
+	}
+}

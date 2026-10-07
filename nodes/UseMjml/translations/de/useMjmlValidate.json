@@ -1,0 +1,39 @@
+{
+	"header": {
+		"displayName": "MJML Validate",
+		"description": "Ein MJML-Template über usemjml.com validieren"
+	},
+	"nodeView": {
+		"mjml": {
+			"displayName": "MJML",
+			"description": "Das MJML-Template (max. 2 MiB). mj-include wird nicht unterstützt."
+		},
+		"notice": {
+			"displayName": "Ein ungültiges Template ist kein Fehler: Der Knoten liefert <code>valid: false</code> zusammen mit den Fehlern. Verzweige mit einem If-Knoten auf <code>valid</code>."
+		},
+		"options": {
+			"displayName": "Optionen",
+			"placeholder": "Option hinzufügen",
+			"options": {
+				"validationLevel": {
+					"displayName": "Validierungsstufe",
+					"description": "Wie streng MJML das Template prüft",
+					"options": {
+						"skip": {
+							"displayName": "Überspringen",
+							"description": "Nur abfangen, was sich gar nicht parsen lässt"
+						},
+						"soft": {
+							"displayName": "Weich",
+							"description": "Fehler melden, Template gilt als geprüft"
+						},
+						"strict": {
+							"displayName": "Streng",
+							"description": "Jede Regelverletzung macht das Template ungültig"
+						}
+					}
+				}
+			}
+		}
+	}
+}
